@@ -13,12 +13,20 @@ import Pricing from 'sections/pricing';
 import Testimonials from 'sections/testimonials';
 import FAQ from 'sections/faq';
 import Subscribe from 'sections/subscribe';
+import WhatsAppWidget from 'react-whatsapp-widget';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
+        <WhatsAppWidget 
+      phoneNumber='5547991423831'
+      companyName='MEI ERP'
+      sendButton='Enviar'
+      message='Olá! 👋🏼 Como posso ajudá-lo?'
+      textReplyTime='Fique a vontade e envie suas dúvidas.'
+       />
           <SEO title="MEI ERP - Sistema de gestão para pequenos negócios MEI" />
           <Banner />
           <Services />

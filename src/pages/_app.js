@@ -4,6 +4,7 @@ import { initGA, logPageView } from 'analytics';
 import 'swiper/swiper-bundle.min.css';
 import 'rc-drawer/assets/index.css';
 import 'typeface-dm-sans';
+import 'react-whatsapp-widget/dist/index.css';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
